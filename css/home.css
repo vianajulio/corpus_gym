@@ -1,0 +1,576 @@
+#carrosel {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 128rem;
+  height: 50rem;
+  margin: 5rem auto;
+}
+
+.foto-carousel {
+  align-items: center;
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.foto-carousel>img,
+video {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  animation: display 52s infinite;
+}
+
+#img {
+  border-radius: 1.5rem;
+  top: 5rem;
+  width: 80rem;
+  height: 45rem;
+  background-color: rgba(0, 0, 0, 0.671);
+  box-shadow: 0rem 0rem 3rem 1rem rgb(99, 99, 99);
+}
+
+#img img {
+  height: 95%;
+  width: 100%;
+  object-fit: contain;
+}
+
+
+.foto-carousel img:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+.foto-carousel img:nth-child(2) {
+  animation-delay: 12s;
+}
+
+.foto-carousel img:nth-child(3) {
+  animation-delay: 22s;
+}
+
+.foto-carousel img:nth-child(4) {
+  animation-delay: 32s;
+}
+
+.foto-carousel video:nth-child(5) {
+  animation-delay: 42s;
+}
+
+
+
+@keyframes display {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+
+  10% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  30% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+}
+
+#carousel {
+  display: grid;
+  grid-template-columns: 1fr 100fr 1fr;
+
+  margin: 5rem auto 5rem auto;
+  max-width: 100%;
+  height: 65rem;
+  max-width: 128rem;
+}
+
+.carousel-inner {
+  grid-column: 2;
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: 1fr 60fr 1fr;
+  justify-content: center;
+  height: 66rem;
+}
+
+.carousel-item {
+  grid-column: 2;
+  width: 100%;
+  height: 60rem;
+}
+
+.carousel-inner img,
+video {
+  position: relative;
+  top: 4.5rem;
+  border-radius: 10px;
+  width: 100%;
+  height: 60rem;
+  transition: 0.3s ease-in;
+}
+
+/* inicio items carousel */
+
+#item img {
+  width: 100%;
+  height: 60rem;
+}
+
+#item img:hover {
+  transition: 0.3s ease-in;
+  box-shadow: 0rem 0rem 0.5rem 1rem rgb(12, 47, 110);
+}
+
+/* fim items carousel */
+
+#back-planos {
+  background-color: rgb(28, 30, 43);
+  box-shadow: 0rem 0rem 5rem 0.1rem rgba(255, 255, 255, 0.164);
+  text-align: center;
+  width: 100vw;
+  height: 35rem;
+  margin: 5rem 0rem;
+}
+
+#planos {
+  display: block;
+  height: 100%;
+  padding: 5rem;
+  list-style: none;
+  color: #fff;
+}
+
+#planos li {
+  letter-spacing: 0.3rem;
+  width: auto;
+  font-size: 5rem;
+  margin: 0rem auto 5rem auto;
+}
+
+#botao-planos a {
+  width: 100%;
+  letter-spacing: 0.3rem;
+  color: #fff;
+  font-size: 4rem;
+  transition: 0.3s ease-in;
+}
+
+#botao-planos a:link {
+  text-decoration: none;
+}
+
+#botao-planos {
+  margin: 2rem auto;
+  width: 25rem;
+  border-radius: 1rem;
+
+  border: 0.2rem rgb(0, 0, 0) solid;
+  background-color: rgb(0, 0, 0);
+  transition: 0.5s ease-out;
+}
+
+#botao-planos a:hover {
+  color: #000;
+  transition: 0.3s ease-in;
+}
+
+#botao-planos:hover {
+  transition: 0.5s ease-in;
+  color: #000;
+  background: rgb(255, 255, 255);
+}
+
+
+
+.conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: 60rem;
+}
+
+#contato {
+  display: block;
+  max-width: 50rem;
+  max-height: 30rem;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+#contato p {
+  color: rgb(212, 218, 253);
+  font-size: 3rem;
+  margin-bottom: 10px;
+  letter-spacing: 3px;
+}
+
+#contato ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+#contato li {
+  font-size: 2rem;
+}
+
+#fone {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+#atendimento {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+#endereco a {
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+#endereco a:hover {
+  color: rgb(0, 69, 133);
+  transition: ease 1s;
+}
+
+#contato :nth-child(4) {
+  color: rgb(212, 218, 253);
+  font-size: 2.5rem;
+  margin-top: 1.5rem;
+}
+
+.mapa {
+  min-width: 45rem;
+  min-height: 45rem;
+}
+
+
+
+
+
+@media only screen and (min-width: 1441px) and (max-width: 2560px) {
+
+  #contato {
+    max-width: 70rem;
+    max-height: 60rem;
+  }
+
+  #contato p {
+    font-size: 4rem;
+    letter-spacing: 0.6rem;
+  }
+
+  #contato li {
+    font-size: 3rem;
+    width: auto;
+  }
+
+  #contato :nth-child(4) {
+    font-size: 3.5rem;
+    margin-top: 1.5rem;
+  }
+
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+
+  #back-planos {
+    height: 30rem;
+  }
+
+  #planos li {
+    font-size: 4rem;
+  }
+
+  #botao-planos a {
+    letter-spacing: 0.5rem;
+    font-size: 3rem;
+  }
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+  #carrosel {
+    width: 100vw;
+  }
+
+  #back-planos {
+    height: 25rem;
+  }
+
+  #planos li {
+    letter-spacing: 0.3rem;
+    width: auto;
+    font-size: 3rem;
+    margin: 0rem auto 3rem auto;
+  }
+
+  #botao-planos {
+    margin: 2rem auto;
+    width: 20rem;
+  }
+
+  #botao-planos a {
+    letter-spacing: 0.4rem;
+    font-size: 3rem;
+  }
+
+  #botao-planos:hover {
+    transition: 0.5s ease-in;
+    background: rgb(255, 255, 255);
+    letter-spacing: 0.5rem;
+  }
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+
+  .zap {
+    display: none;
+  }
+
+  #carrosel {
+    width: 100vw;
+    height: 35rem;
+    margin: 0rem auto;
+  }
+
+  #img {
+    border-radius: 0.5rem;
+    width: 100vw;
+    height: 30rem;
+  }
+
+  #back-planos {
+    height: 20rem;
+  }
+
+  #planos {
+    padding: 2rem;
+  }
+
+  #planos li {
+    font-size: 3rem;
+    margin: 2.5rem 0rem;
+  }
+
+  #botao-planos p {
+    font-size: 2.5rem;
+  }
+
+
+  .conteudo {
+    height: 30rem;
+    margin: 5rem auto;
+  }
+
+  .mapa {
+    display: none;
+    visibility: hidden;
+  }
+
+}
+
+@media only screen and (min-width: 501px) and (max-width: 600px) {
+
+  .zap {
+    display: none;
+  }
+
+  #carrosel {
+    width: 100vw;
+    height: 35rem;
+    margin: 0rem auto;
+  }
+
+  #img {
+    border-radius: 0.5rem;
+    width: 100vw;
+    height: 25rem;
+  }
+
+  #back-planos {
+    height: 15rem;
+  }
+
+  #planos {
+    padding: 1rem;
+  }
+
+  #planos li {
+    font-size: 2.5rem;
+    margin: 1.5rem 0rem;
+  }
+
+  #botao-planos p {
+    font-size: 2rem;
+  }
+
+  .conteudo {
+    justify-content: center;
+    height: 30rem;
+    margin: 5rem auto;
+  }
+
+  #contato p {
+    font-size: 2.5rem;
+  }
+
+  #contato li{
+    font-size: 1.6rem;
+  }
+
+  #contato :nth-child(4) {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  .mapa {
+    display: none;
+    visibility: hidden;
+  }
+
+}
+
+
+@media only screen and (min-width: 301px) and (max-width: 500px) {
+
+  .zap {
+    display: none;
+  }
+
+  #carrosel {
+    width: 100vw;
+    height: 35rem;
+    margin: 0rem auto;
+  }
+
+  #img {
+    border-radius: 0.5rem;
+    width: 100vw;
+    height: 25rem;
+  }
+
+  #back-planos {
+    height: 15rem;
+  }
+
+  #planos {
+    padding: 1rem;
+  }
+
+  #planos li {
+    font-size: 2.5rem;
+    margin: 1.5rem 0rem;
+  }
+
+  #botao-planos p {
+    font-size: 2rem;
+  }
+
+  .conteudo {
+    justify-content: center;
+    height: 30rem;
+    margin: 5rem auto;
+  }
+
+  #contato p {
+    font-size: 2.5rem;
+  }
+
+  #contato li{
+    font-size: 1.6rem;
+  }
+
+  #contato :nth-child(4) {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  .mapa {
+    display: none;
+    visibility: hidden;
+  }
+
+}
+
+
+@media only screen and (min-width: 100px) and (max-width: 300px) {
+
+  .zap {
+    display: none;
+  }
+
+  #carrosel {
+    width: 100vw;
+    height: 35rem;
+    margin: 0rem auto;
+  }
+
+  #img {
+    border-radius: 0.5rem;
+    width: 100vw;
+    height: 25rem;
+  }
+
+  #back-planos {
+    height: 15rem;
+  }
+
+  #planos {
+    padding: 1rem;
+  }
+
+  #planos li {
+    font-size: 2.5rem;
+    margin: 1.5rem 0rem;
+  }
+
+  #botao-planos p {
+    font-size: 2rem;
+  }
+
+  .conteudo {
+    justify-content: center;
+    height: 30rem;
+    margin: 5rem auto;
+  }
+
+  #contato p {
+    font-size: 2rem;
+  }
+
+  #contato li{
+    font-size: 1.4rem;
+  }
+
+  #contato :nth-child(4) {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  .mapa {
+    display: none;
+    visibility: hidden;
+  }
+
+}

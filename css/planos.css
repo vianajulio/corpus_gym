@@ -1,0 +1,232 @@
+#tabela {
+    display: flex;
+    justify-content: center;
+    width: 128rem;
+    height: 95vh;
+    margin: 1rem auto;
+}
+
+.tabela-preco {
+    display: flex;
+    justify-content: center;
+    width: 60rem;
+    margin: 3rem auto;
+    padding: 1.5rem;
+    border-radius: 1rem;
+
+    text-align: center;
+    font-size: 2rem;
+
+    background-color: rgb(255, 255, 255);
+    border: 0.5rem rgb(0, 0, 0) solid;
+}
+
+#conteudo-preco {
+    padding: 1rem;
+    width: 100%;
+}
+
+#conteudo-preco ul,
+#conteudo-preco li {
+    width: auto;
+}
+
+
+.tabela-preco header {
+    letter-spacing: 0.2rem;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.tabela-preco ul,
+li {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#planos,
+#pacotes {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    line-height: 4rem;
+    font-size: 2.5rem;
+    font-weight: 590;
+    color: #000;
+    margin-bottom: 3.5rem;
+}
+
+#matricula {
+    text-align: center;
+    margin: auto;
+    width: auto;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+#matricula li {
+    width: 100%;
+}
+
+#matricula li:first-child {
+    color: rgb(206, 0, 0);
+    margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 1441px) {
+
+    .tabela-preco {
+        width: 60%;
+    }
+
+    .tabela-preco header {
+        font-size: 4rem;
+    }
+
+    .tabela-preco ul,
+    li {
+        font-size: 2.6rem;
+    }
+
+    #planos li,
+    #pacotes li {
+        width: 30rem;
+        text-align: center;
+    }
+
+    #pacotes {
+        line-height: 5rem;
+    }
+
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+
+    #tabela {
+        width: 80vw;
+        height: 80rem;
+    }
+
+    .tabela-preco {
+        padding: 1rem 0rem;
+    }
+
+    #pacotes {
+        line-height: 5rem;
+    }
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    #tabela {
+        width: 80vw;
+        height: 80rem;
+    }
+
+    #planos,
+    #pacotes {
+        padding: 1rem 5rem;
+    }
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px){
+
+    #tabela {
+        padding: 0rem 1rem;
+        width: 80vw;
+        height: 75rem;
+    }
+
+    .tabela-preco {
+        width: 80%;
+        height: 65rem;
+    }
+
+    .tabela-preco header {
+        font-size: 2.6rem;
+    }
+
+    .tabela-preco ul,
+    li {
+        font-size: 1.5rem;
+    }
+
+    #planos li,
+    #pacotes li {
+        width: 22.5vw;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (min-width: 500px) and (max-width: 600px){
+
+    #tabela {
+        padding: 0rem 0rem;
+        width: 90vw;
+        height: 80rem;
+    }
+
+    .tabela-preco {
+        width: 80%;
+        height: 70rem;
+    }
+
+    .tabela-preco header {
+        font-size: 2rem;
+    }
+
+    .tabela-preco ul,
+    li {
+        font-size: 1.5rem;
+    }
+
+    #planos li,
+    #pacotes li {
+        width: 22.5vw;
+        text-align: center;
+    }
+
+
+}
+
+@media only screen and (min-width: 100px) and (max-width: 499px){
+
+    #tabela {
+        padding: 0rem 0rem;
+        width: 90vw;
+        height: 80rem;
+    }
+
+    .tabela-preco {
+        width: 80%;
+        height: 73rem;
+    }
+
+    .tabela-preco header {
+        font-size: 1.5rem;
+    }
+
+    .tabela-preco ul,
+    li {
+        font-size: 1.3rem;
+    }
+
+    #planos li,
+    #pacotes li {
+      
+        width: 20vw;
+        text-align: start;
+    }
+
+    #pacotes ul:nth-child(2){
+        line-height: 10rem;
+    }
+
+}
