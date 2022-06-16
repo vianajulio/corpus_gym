@@ -305,9 +305,8 @@ footer .boxs {
   text-decoration: none;
 }
 
-#conteudo-boxs a:hover {
-  color: #fff;
-  letter-spacing: 1px;
+.conteudo-boxs a:hover {
+  letter-spacing: 0.1rem;
 }
 
 #borda {
