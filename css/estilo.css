@@ -257,7 +257,7 @@ footer {
   width: 100vw;
   height: 20rem;
 
-  box-shadow: 0rem 0rem 5rem 2rem #000;
+  box-shadow: 0rem 0rem 4rem 1rem #000;
   background-image: url(/img/img-footer.png);
 
   background-position: center;

@@ -28,7 +28,7 @@ video {
   width: 80rem;
   height: 45rem;
   background-color: rgba(0, 0, 0, 0.671);
-  box-shadow: 0rem 0rem 3rem 1rem rgb(99, 99, 99);
+  box-shadow: 0rem 0rem 2.5rem 1rem rgb(0, 0, 0);
 }
 
 #img img {
@@ -36,7 +36,6 @@ video {
   width: 100%;
   object-fit: contain;
 }
-
 
 .foto-carousel img:nth-child(1) {
   animation-delay: 0.5s;
@@ -138,7 +137,7 @@ video {
 
 #back-planos {
   background-color: rgb(28, 30, 43);
-  box-shadow: 0rem 0rem 5rem 0.1rem rgba(255, 255, 255, 0.164);
+  box-shadow: 0rem 0rem 3rem 0.1rem rgb(0, 0, 0);
   text-align: center;
   width: 100vw;
   height: 35rem;
@@ -193,8 +192,6 @@ video {
   background: rgb(255, 255, 255);
 }
 
-
-
 .conteudo {
   display: flex;
   align-items: center;
@@ -247,7 +244,7 @@ video {
 }
 
 #endereco a:hover {
-  color: rgb(0, 69, 133);
+  color: rgb(6, 117, 221);
   transition: ease 1s;
 }
 
