@@ -79,7 +79,12 @@ li {
 
 @media only screen and (min-width: 1441px) {
 
+    #tabela {
+        height: auto;
+    }
+
     .tabela-preco {
+        height: 90%;
         width: 60%;
     }
 
@@ -140,12 +145,12 @@ li {
     #tabela {
         padding: 0rem 1rem;
         width: 80vw;
-        height: 75rem;
+        height: auto;
     }
 
     .tabela-preco {
         width: 80%;
-        height: 65rem;
+        height: 90%;
     }
 
     .tabela-preco header {
@@ -159,6 +164,7 @@ li {
 
     #planos li,
     #pacotes li {
+        height: 12vh;
         width: 22.5vw;
         text-align: center;
     }
@@ -170,7 +176,7 @@ li {
     #tabela {
         padding: 0rem 0rem;
         width: 90vw;
-        height: 80rem;
+        height: 100rem;
     }
 
     .tabela-preco {
@@ -189,6 +195,7 @@ li {
 
     #planos li,
     #pacotes li {
+        height: 5vh;
         width: 22.5vw;
         text-align: center;
     }
@@ -218,15 +225,11 @@ li {
         font-size: 1.3rem;
     }
 
-    #planos li,
-    #pacotes li {
-      
+    #planos li, #pacotes li{
+        line-height: 1.5vh;
+        height: 5vh;
         width: 20vw;
         text-align: start;
-    }
-
-    #pacotes ul:nth-child(2){
-        line-height: 10rem;
     }
 
 }
